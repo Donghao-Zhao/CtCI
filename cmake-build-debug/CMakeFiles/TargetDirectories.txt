@@ -1,3 +1,0 @@
-C:/Users/tonyd/CLionProjects/CtCI/cmake-build-debug/CMakeFiles/CtCI.dir
-C:/Users/tonyd/CLionProjects/CtCI/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/tonyd/CLionProjects/CtCI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
