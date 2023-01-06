@@ -2,7 +2,7 @@
 // Created by tonyd on 12/24/2022.
 //
 
-#include "isUnique.h"
+#include "is_Unique.h"
 
 using namespace std;
 
@@ -46,14 +46,27 @@ namespace CtCI {
         return true;
     }
 
+    bool myString_1_1::isUnique_noDS(string str){
+        sort(str.begin(), str.end());
+        bool noRepeat = true;
+        for (int i = 0; i != str.size() - 1; i++){
+            if (str[i] == str[i + 1]){
+                noRepeat = false;
+                break;
+            }
+        }
+        return noRepeat;
+    }
+
     bool myString_1_1::unitTest(){
-        vector<std::string> words = {"123456abcdef789ghijklmnopqrstuvwxyz",
+        vector<std::string> unit = {"123456abcdef789ghijklmnopqrstuvwxyz",
                                      "abcda",
-                                     "ACCESS"};
-        for (auto word : words){
+                                     "ACCESSS"};
+        for (auto word : unit){
             cout << word << ": " << boolalpha << isUnique_lowCaseOnly(word) << endl;
             cout << word << ": " << boolalpha << isUnique_boolVector(word) << endl;
             cout << word << ": " << boolalpha << isUnique_bitSet(word) << endl;
+            cout << word << ": " << boolalpha << isUnique_noDS(word) << endl;
         }
         return 0;
     }

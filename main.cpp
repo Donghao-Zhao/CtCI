@@ -1,11 +1,11 @@
 #include "include.h"
 
-#define CURRENT_PROJECT myString_1_2
+#define CURRENT_PROJECT myString_1_4
 
 int main() {
-    std::cout << std::endl << "CtCI Project " << std::endl;
+    cout << endl << "CtCI Project " << endl << endl;
     CtCI::CURRENT_PROJECT myProject;
     int exitStatus = myProject.unitTest();
-    std::cout << "Exit Status: " << exitStatus << std::endl;
+    cout << endl << "Exit Status: " << exitStatus << endl;
     return 0;
 }

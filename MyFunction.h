@@ -5,9 +5,12 @@
 #include <iostream>
 #include <vector>
 #include <bitset>
+#include <algorithm>
 
 #ifndef CTCI_MY_FUNCTION_H
 #define CTCI_MY_FUNCTION_H
+
+using namespace std;
 
 namespace CtCI{
     class MyFunction{

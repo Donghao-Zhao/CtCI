@@ -7,8 +7,6 @@
 #ifndef CTCI_IS_UNIQUE_H
 #define CTCI_IS_UNIQUE_H
 
-using namespace std;
-
 namespace CtCI {
     class myString_1_1: public MyFunction {
     public:
@@ -16,6 +14,7 @@ namespace CtCI {
         static bool isUnique_lowCaseOnly(string str);
         static bool isUnique_boolVector(string str);
         static bool isUnique_bitSet(string str);
+        static bool isUnique_noDS(string str);
     };
 } // CtCI
 
