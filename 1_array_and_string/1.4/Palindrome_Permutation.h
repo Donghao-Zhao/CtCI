@@ -11,7 +11,7 @@ namespace CtCI {
 
     class myString_1_4: public MyFunction {
     public:
-        bool unitTest();
+        int unitTest();
         bool Palindrome_Permutation(string str);
     };
 

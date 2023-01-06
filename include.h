@@ -10,6 +10,7 @@
 #include "1_array_and_string/1.2/Check_Permutation.h"
 #include "1_array_and_string/1.3/URLify.h"
 #include "1_array_and_string/1.4/Palindrome_Permutation.h"
+#include "1_array_and_string/1.5/One_Away.h"]
 
 using namespace std;
 

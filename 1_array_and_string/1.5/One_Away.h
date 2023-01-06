@@ -10,7 +10,8 @@ namespace CtCI {
 
     class myString_1_5 : public MyFunction {
     public:
-        bool unitTest();
+        int unitTest();
+        bool One_Way(string str);
     };
 
 } // CtCI

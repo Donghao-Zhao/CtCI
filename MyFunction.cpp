@@ -3,3 +3,9 @@
 //
 
 #include "MyFunction.h"
+
+namespace CtCI{
+    int MyFunction::unitTest(){
+        return false;
+    }
+}

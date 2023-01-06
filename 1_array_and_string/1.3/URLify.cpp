@@ -48,7 +48,7 @@ namespace CtCI{
         return str;
     }
 
-    bool myString_1_3::unitTest() {
+    int myString_1_3::unitTest() {
 
         char strSingle[] = "Mr John Smith    ";
         URLify_single(strSingle, 13);

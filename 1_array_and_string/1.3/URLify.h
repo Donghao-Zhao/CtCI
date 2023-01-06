@@ -9,7 +9,7 @@
 namespace CtCI{
     class myString_1_3: public MyFunction{
     public:
-        bool unitTest();
+        int unitTest();
         void URLify_single(char* str, int size);
         string URLify_multiple(string str, int size);
     };

@@ -20,7 +20,7 @@ namespace CtCI {
         return (checker & (checker - 1)) == 0;
     }
 
-    bool myString_1_4::unitTest() {
+    int myString_1_4::unitTest() {
         vector<string> units = {"tact Coa",
                                 "abcd",
                                 "aabbccdd"};

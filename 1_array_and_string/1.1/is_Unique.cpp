@@ -58,7 +58,7 @@ namespace CtCI {
         return noRepeat;
     }
 
-    bool myString_1_1::unitTest(){
+    int myString_1_1::unitTest(){
         vector<std::string> unit = {"123456abcdef789ghijklmnopqrstuvwxyz",
                                      "abcda",
                                      "ACCESSS"};

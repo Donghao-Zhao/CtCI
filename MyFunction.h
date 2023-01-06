@@ -15,7 +15,7 @@ using namespace std;
 namespace CtCI{
     class MyFunction{
     public:
-        virtual bool unitTest();
+        virtual int unitTest();
     };
 }
 

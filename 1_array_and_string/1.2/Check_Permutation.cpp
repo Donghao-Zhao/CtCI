@@ -30,7 +30,7 @@ namespace CtCI {
         return true;
     }
 
-    bool myString_1_2::unitTest(){
+    int myString_1_2::unitTest(){
         vector<string> unit1 = {"123456",
                                      "abcda",
                                      "ACCESS"};

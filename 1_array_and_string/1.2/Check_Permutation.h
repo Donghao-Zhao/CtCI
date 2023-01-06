@@ -10,7 +10,7 @@
 namespace CtCI {
     class myString_1_2: public MyFunction {
     public:
-        bool unitTest();
+        int unitTest();
         bool checkPermutation_sort(string str1, string str2);
         bool checkPermutation_statistic(string str1, string str2);
     };
