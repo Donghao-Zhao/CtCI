@@ -54,7 +54,7 @@ namespace CtCI{
         URLify_single(strSingle, 13);
         cout << strSingle << endl;
 
-        vector <char *> unit1 = { "abcd  abcd",
+        vector <string> unit1 = { "abcd  abcd",
                                  "1234 1234",
                                  ",./, ,./,",
                                  "Mr John Smith    "};

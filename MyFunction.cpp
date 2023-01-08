@@ -6,6 +6,6 @@
 
 namespace CtCI{
     int MyFunction::unitTest(){
-        return false;
+        return 10;
     }
 }
