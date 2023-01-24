@@ -8,15 +8,15 @@
 #define END_INDEX (COLUMN - 1)
 
 namespace CtCI {
-    bool myString_1_7::rotateMatrix(int ** matrix) {
+    bool myString_1_7::rotateMatrix(int ** myMatrix) {
         int tmp = 0;
         for (int i = 0; i != COLUMN / 2; i++) {
             for (int j = i; j != (COLUMN - 1 - i); j++) {
-                tmp = *((int *)matrix + i * COLUMN + j);   //top to tmp
-                *((int *)matrix + i * COLUMN + j) = *((int *)matrix + (END_INDEX - j) * COLUMN + i);    // top <-- left
-                *((int *)matrix + (END_INDEX - j) * COLUMN + i) = *((int *)matrix + COLUMN * (END_INDEX - i) + (END_INDEX - j)); // left <-- bot
-                *((int *)matrix + COLUMN * (END_INDEX - i) + (END_INDEX - j)) = *((int *)matrix + COLUMN * j + (END_INDEX - i));    // bot <-- right
-                *((int *)matrix + COLUMN * j + (END_INDEX - i)) = tmp; // right <-- tmp
+                tmp = *((int *)myMatrix + i * COLUMN + j);   //top to tmp
+                *((int *)myMatrix + i * COLUMN + j) = *((int *)myMatrix + (END_INDEX - j) * COLUMN + i);    // top <-- left
+                *((int *)myMatrix + (END_INDEX - j) * COLUMN + i) = *((int *)myMatrix + COLUMN * (END_INDEX - i) + (END_INDEX - j)); // left <-- bot
+                *((int *)myMatrix + COLUMN * (END_INDEX - i) + (END_INDEX - j)) = *((int *)myMatrix + COLUMN * j + (END_INDEX - i));    // bot <-- right
+                *((int *)myMatrix + COLUMN * j + (END_INDEX - i)) = tmp; // right <-- tmp
             }
         }
         return false;
@@ -31,10 +31,15 @@ namespace CtCI {
                 21, 22, 23, 24, 25
         };
 
-        rotateMatrix((int **)(units));
+        if (rotateMatrix((int **)(units))){
+            cout << "Failed" << endl;
+            return 1;
+        }
 
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
+
+
+        for (int i = 0; i < COLUMN; i++) {
+            for (int j = 0; j < COLUMN; j++) {
                 cout << *((int *)units + i * COLUMN + j) << " ";
             }
             cout << endl;

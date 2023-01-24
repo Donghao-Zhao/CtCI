@@ -12,7 +12,7 @@ namespace CtCI {
     class myString_1_7:MyFunction {
     public:
         int unitTest();
-        static bool rotateMatrix(int ** matrix);
+        static bool rotateMatrix(int ** myMatrix);
     };
 
 } // CtCI

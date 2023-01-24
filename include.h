@@ -13,6 +13,8 @@
 #include "1_array_and_string/1.5/One_Away.h"
 #include "1_array_and_string/1.6/String_Compression.h"
 #include "1_array_and_string/1.7/Rotate_Matrix.h"
+#include "1_array_and_string/1.8/Zero_Matrix.h"
+#include "1_array_and_string/1.9/String_Rotation.h"
 
 using namespace std;
 

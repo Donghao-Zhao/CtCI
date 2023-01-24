@@ -1,6 +1,6 @@
 #include "include.h"
 
-#define CURRENT_PROJECT myString_1_7
+#define CURRENT_PROJECT myString_1_9
 
 int main() {
     cout << endl << "CtCI Project " << endl << endl;
