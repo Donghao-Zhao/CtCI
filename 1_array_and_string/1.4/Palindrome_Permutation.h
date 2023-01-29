@@ -1,17 +1,17 @@
 //
-// Created by tonyd on 12/27/2022.
+// Created by Donghao on 12/27/2022.
 //
-
-#include "../../MyFunction.h"
 
 #ifndef CTCI_PALINDROME_PERMUTATION_H
 #define CTCI_PALINDROME_PERMUTATION_H
 
-namespace CtCI {
+#include "../../include.h"
 
-    class myString_1_4: public MyFunction {
+namespace CtCI {
+    class myString_1_4 : public MyFunction {
     public:
-        int unitTest();
+        int unitTest() override;
+
         bool Palindrome_Permutation(string str);
     };
 

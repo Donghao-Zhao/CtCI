@@ -1,18 +1,18 @@
 //
-// Created by Donghao Zhao on 1/9/23.
+// Created by Donghao on 1/9/23.
 //
 
 #ifndef CTCI_ZERO_MATRIX_H
 #define CTCI_ZERO_MATRIX_H
 
-#include "../../MyFunction.h"
+#include "../../include.h"
 
 namespace CtCI {
-
-    class myString_1_8 : MyFunction{
+    class myString_1_8 : MyFunction {
     public:
-        int unitTest();
-        static bool Zero_Matrix(int ** myMatrix, int row, int column);
+        int unitTest() override;
+
+        static bool Zero_Matrix(int **myMatrix, int row, int column);
     };
 
 } // CtCI

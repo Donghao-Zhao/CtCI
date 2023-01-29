@@ -1,5 +1,5 @@
 //
-// Created by Donghao Zhao on 1/9/23.
+// Created by Donghao on 1/9/23.
 //
 
 #include "String_Rotation.h"
@@ -16,15 +16,15 @@ namespace CtCI {
     }
 
     int myString_1_9::unitTest() {
-        vector <string> unit1 = {
+        vector<string> unit1 = {
                 "123",
                 "abcd"
         };
-        vector <string> unit2 = {
+        vector<string> unit2 = {
                 "312",
                 "bcdf"
         };
-        for (int i = 0; i < unit1.size(); i++){
+        for (int i = 0; i < unit1.size(); i++) {
             cout << boolalpha << String_Rotation(unit1[i], unit2[i]) << endl;
         }
         return 0;

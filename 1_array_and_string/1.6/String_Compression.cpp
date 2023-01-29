@@ -1,5 +1,5 @@
 //
-// Created by tonyd on 1/6/2023.
+// Created by Donghao on 1/6/2023.
 //
 
 #include "String_Compression.h"
@@ -9,12 +9,11 @@ namespace CtCI {
         string strNew;
         char c = str[0];
         int count = 1;
-        for (int i = 1; i < str.size(); i++){
+        for (int i = 1; i < str.size(); i++) {
 
-            if (str[i] == str[i - 1]){
+            if (str[i] == str[i - 1]) {
                 count++;
-            }
-            else{
+            } else {
                 strNew.push_back(c);
                 strNew.append(to_string(count));
                 c = str[i];
@@ -28,13 +27,13 @@ namespace CtCI {
     }
 
     int myString_1_6::unitTest() {
-        vector <string> units = {
+        vector<string> units = {
                 "aabbcc",
                 "aaabbbccc",
                 "AAABBBCCD"
         };
 
-        for (int i = 0; i < units.size(); i++){
+        for (int i = 0; i < units.size(); i++) {
             cout << units[i] << ":" << stringCompression(units[i]) << endl;
         }
         return 0;
